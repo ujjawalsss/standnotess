@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>StandNote</title>
+    <link rel="stylesheet" href="../css/popup.css" />
+  </head>
+  <body>
+    <div id="content-buttons">
+      <p style="margin: 0; margin-bottom: 10px" class="details">
+        <a href="https://standnote.netlify.app/dashboard" target="_blank"
+          >Dashboard</a
+        >
+        <button id="logOut">Log Out</button>
+      </p>
+    </div>
+    <a href="#">
+      <img src="../assets/logo.png" class="logo" />
+    </a>
+    <div id="login" class="login">
+      <div class="form">
+        <div>
+          <span>Email Address</span>
+          <input
+            id="email"
+            class="form-input"
+            type="text"
+            placeholder="Enter your Email Address"
+          />
+        </div>
+        <div>
+          <span>Password</span>
+          <input
+            id="password"
+            class="form-input"
+            type="password"
+            placeholder="Enter your Password"
+          />
+        </div>
+        <input
+          class="action-buttons"
+          type="submit"
+          id="submit"
+          value="Sign In"
+        />
+        <p style="text-align: center; margin: 0; font-size: 0.94rem">OR</p>
+        <button id="google-btn" class="google-btn">
+          <img
+            class="google-icon"
+            src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+          />
+          <span>Continue with Google</span>
+        </button>
+        <span style="font-weight: 100; font-size: 0.94rem"
+          >Don't have an account?
+          <a href="https://standnote.netlify.app/register" target="_blank"
+            >Create Now!</a
+          ></span
+        >
+      </div>
+    </div>
+    <div id="content" class="content">
+      <p>
+        StandNote is your easy to use online meeting assistant that backs you up
+        with automated meeting minutes for every conversation.
+      </p>
+      <button class="action-buttons" id="start-record">
+        Generate Meeting Notes
+      </button>
+      <p style="font-size: 0.75rem; text-align: center; margin: 4px">
+        Signed In as: <span id="emailID"></span>
+      </p>
+    </div>
+
+    <script src="../javascript/popup.js"></script>
+  </body>
+</html>
